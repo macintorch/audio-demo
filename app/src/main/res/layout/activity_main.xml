@@ -11,8 +11,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ainor.com.my.controlaudio.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:text="Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playButton"
+            android:layout_weight="1"
+            android:onClick="play"/>
+
+        <Button
+            android:text="Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pauseButton"
+            android:layout_weight="1"
+            android:onClick="pause"/>
+    </LinearLayout>
 </RelativeLayout>
